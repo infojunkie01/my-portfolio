@@ -34,7 +34,6 @@ section{
 .right-column{
   flex: 1 1 100px;
 }
-
 .right-column h4{
   padding-bottom: .8em;
 }
@@ -108,3 +107,40 @@ header a:hover{
   opacity: 0.25;
 }
 /* End of work section styles */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  body{
+      width: auto;
+      margin: 0 5em 5em 5em;
+ }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  body{
+      width: auto;
+      margin: 0 1em 1em 1em;
+ }
+  header nav ul li {
+      margin: 1em 1em 0 0;
+ }
+  .left-column{
+      flex: unset;
+      text-align: left;
+      width: 100%;
+ }
+  .right-column{
+      flex: unset;
+ }
+  section{
+      flex-wrap: wrap;
+ }
+  section h3{
+      padding-bottom: 1em;
+ }
+}
