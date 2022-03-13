@@ -1,3 +1,8 @@
+:root{
+  --my-blue: rgb(0, 102, 255);
+  --my-purple: rgb(150, 44, 255);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,3 +15,46 @@ body{
   width: 800px;
   margin: auto;
 }
+
+section{
+  margin-bottom: 3em;
+  display: flex;
+}
+
+.left-column{
+  flex: 0 0 80px;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.right-column{
+  flex: 1 1 100px;
+}
+
+/* Header and nav bar styles */
+header{
+  display: flex;
+  margin: 1em 0 3em 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+header nav ul li {
+  margin: 1em 0 0 2em;
+}
+header a{
+  text-decoration: none;
+}
+header a:hover{
+  color: var(--my-purple);
+}
+#avatar img{
+  width: 25px;
+}
+/* End of header styles */
